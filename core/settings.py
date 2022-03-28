@@ -77,16 +77,9 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('KEY_FLEX_DB_NAME', 'x'),
-        'USER': os.environ.get('KEY_FLEX_DB_USER', 'x'),
-        'PASSWORD': os.environ.get('FLEX_DB_PASS', 'x'),
-        'HOST': os.environ.get('KEY_FLEX_DB_HOST', 'x'),
-        'PORT': os.environ.get('KEY_FLEX_DB_PORT', 'x'),
-        'TEST': {
-            'NAME': 'test_db',
-        },
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'parrot',
+    }
 }
 
 
